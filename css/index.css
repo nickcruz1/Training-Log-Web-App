@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#header {
+  background: #0029cb;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+}
+#header > #title {
+  display: inline-block;
+}
+
+#menu a,
+#menubtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.clear {
+  clear: both;
+}
+#container {
+  margin: 1.5rem;
+}
+#area {
+  width: 100%;
+  height: 100%;
+  font: 1.4rem;
+  color: #0029cb;
+}
+#area:focus {
+  color: #0029cb;
+  border: 2px solid black;
+}
+.footer {
+  width: 100%;
+  background-color: #0029cb;
+  position: fixed;
+  bottom: 0px;
+}
+.footer > p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Buttons */
+
+#btns {
+  display: flex;
+  justify-content: center;
+}
+
+a.button {
+  display: inline-flex;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: rgb(6, 138, 220);
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 2rem 4rem;
+  margin: 0 2rem 0 2rem;
+}
+a.button:hover {
+  color: #ffffff;
+  background-color: #04378f;
+  border: 2px solid #04e143;
+}
+
+/* About Us section */
+
+#aboutus {
+  margin: 1rem;
+  color: #0029cb;
+  font: 1.2rem;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  #menu {
+    float: right;
+  }
+  .menuitem {
+    display: inline;
+  }
+  .menuitem + .menuitem {
+    border-left: 1px solid white;
+    margin-left: 10px;
+    padding-left: 15px;
+  }
+  #menubtn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #menubtn {
+    display: inline;
+    float: right;
+  }
+  #menu {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #04378f;
+    border: 1px solid white;
+    padding: 1rem;
+  }
+
+  .shownmenu {
+    display: block;
+  }
+  .hiddenmenu {
+    display: none;
+  }
+  .menuitem {
+    display: block;
+  }
+  .menuitem {
+    margin-top: 10px;
+  }
+  .menuitem:hover {
+    background-color: black;
+    color: black;
+    width: 100%;
+  }
+}
